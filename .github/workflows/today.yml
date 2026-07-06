@@ -6,7 +6,7 @@ on:
   push:
 
 jobs:
-  6-June:
+  pratice:
     runs-on: ubuntu-24.04
 
     steps:
