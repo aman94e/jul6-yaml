@@ -15,7 +15,6 @@ jobs:
 
       - name: Intalling dependencies
         run: |
-             sudo apt ugrade -y
              sudo apt install -y jq
              sudo apt install -y yamllimnt
              echo "Installing Dependencies done"
