@@ -1,0 +1,15 @@
+{
+  "name":"aman-sharma",
+  "age":"29",
+  "place":"bahadurgarh",
+  "state":"haryana",
+  "country":"india",
+  "phone":"7419108120",
+  "email":"amansharma94e@gmail.com",
+  "skills": [
+     "aws",
+     "linux",
+     "docker",
+     "bash-scripting"
+  ]
+}

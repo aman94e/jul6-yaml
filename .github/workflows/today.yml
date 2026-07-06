@@ -1,0 +1,40 @@
+---
+
+name: today 6 june workflows
+
+on:
+  push:
+
+jobs:
+  6-June:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checking Repository
+        uses: actions/checkout@v4
+
+      - name: Intalling dependencies
+        run: |
+             sudo apt ugrade -y
+             sudo apt install -y jq
+             sudo apt install -y yamllimnt
+             echo "Installing Dependencies done"
+
+      - name: Validating json file
+        run: jq empty personal.json
+
+      - name: Giving permission to Bash Scripts
+        run: |
+             chmod +x today.sh
+             chmod +x backup.sh
+             chmod +x sys-info.sh
+
+      - name: Running Bash Scripts
+        run: |
+             ./today.sh
+             echo
+             echo
+             ./backup.sh
+             echo
+             echo
+             ./sys-info.sh
